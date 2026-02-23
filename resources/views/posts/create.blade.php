@@ -21,5 +21,7 @@
 
         <input type="submit" value="submit">
     </form>
+
+    <a href="/posts">View all posts</a>
 </body>
 </html>

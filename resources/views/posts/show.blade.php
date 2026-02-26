@@ -9,6 +9,7 @@
     <a href="/posts">All posts</a>
     <h1>{{ $post->name }}</h1>
     <p>{{ $post->email }}</p>
-    <p>{{ $post->trait_exists }}</p>
+    <p>{{ $post->text }}</p>
+    <a href="/posts/{{ $post->id }}/edit">Edit post</a>
 </body>
 </html>

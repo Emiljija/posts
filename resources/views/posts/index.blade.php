@@ -13,7 +13,13 @@
         <h2>{{ $post->name }}</h2>
         <p>{{ $post->email }}</p>
         <p>{{ $post->text }}</p>
-        <a href="/posts/{{ $post->id }}">Show</a>
+        <a href="/posts/{{ $post->id }}">Show</a><br>
+        
+        <form action="/posts/{{$post->id}}/delete" method="post">
+            @csrf
+            @method('DELETE')
+            <input type="submit" value="delete">
+        </form>
     @endforeach
 </body>
 </html>
